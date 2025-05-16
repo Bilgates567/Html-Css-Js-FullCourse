@@ -1,230 +1,365 @@
-🌐 Comprehensive HTML Course Documentation
-### 📚 Table of Contents
-Introduction to HTML
+# 🌐 HTML Full Course - Basic to Advanced with Tags, Properties, and Examples
 
-Document Structure
+Welcome to the **HTML Full Course**! This GitHub README provides a complete, topic-wise breakdown of HTML from basic to advanced concepts with tag descriptions, attributes, and usage examples.
 
-Text Formatting
+---
 
-HTML Elements & Attributes
+## 🧠 1. What is HTML?
 
-Links and Navigation
+* **HTML** stands for **HyperText Markup Language**
+* It's used to **structure content** on the web.
+* **HTML5** is the latest version that includes semantic elements and APIs.
 
-Images and Media
+---
 
-Lists
+## 🧱 2. HTML Basic Structure
 
-Tables
-
-Forms
-
-Semantic HTML
-
-HTML5 APIs
-
-Best Practices
-
-Project Exercises
-
-Resources
-
-### 🧠 1. Introduction to HTML
-What is HTML?
-Definition: HyperText Markup Language
-
-Purpose: Structures content for web browsers
-
-Current Standard: HTML5 (released 2014)
-
-Key Characteristics:
-Uses tags (angle brackets) to mark up content
-
-Platform-independent
-
-Works with CSS (styling) and JavaScript (behavior)
-
-Basic Workflow:
-Create .html file
-
-Write HTML code
-
-Open in browser
-
-### 🏗️ 2. Document Structure
-Core Structure Template:
-html
+```html
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-</head>
-<body>
-    <!-- Visible content goes here -->
-</body>
+<html>
+  <head>
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
 </html>
-Essential Components:
-Component	Purpose
-<!DOCTYPE html>	Declares HTML5 document type
-<html>	Root element containing all content
-<head>	Contains metadata, links to resources
-<body>	Holds all visible page content
-Document Metadata:
-html
-<head>
-    <!-- Character encoding -->
-    <meta charset="UTF-8">
-    
-    <!-- Responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Page description for SEO -->
-    <meta name="description" content="Free HTML tutorial">
-    
-    <!-- CSS links -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- JavaScript -->
-    <script src="script.js" defer></script>
-</head>
-### ✍️ 3. Text Formatting
-Heading Hierarchy:
-html
-<h1>Main Title</h1>  <!-- Only one per page -->
-<h2>Section</h2>
-<h3>Sub-section</h3>
-<h4>Sub-sub-section</h4>
-### Text Elements:
-Element	Purpose	Example
-<p>	Paragraph	<p>This is text.</p>
-<strong>	Important text (bold)	<strong>Warning!</strong>
-<em>	Emphasized text (italic)	<em>Please note</em>
-<mark>	Highlighted text	<mark>Important</mark>
-<small>	Side comments	<small>Terms apply</small>
-<blockquote>	Block quotation	<blockquote cite="source">
-Special Characters:
-html
-&copy;   <!-- © -->
-&trade;  <!-- ™ -->
-&nbsp;   <!-- Non-breaking space -->
-&lt;     <!-- < -->
-&gt;     <!-- > -->
-🖼️ 6. Images and Media
-Image Implementation:
-html
-<img src="image.jpg" 
-     alt="Description of image"
-     width="600"
-     height="400"
-     loading="lazy">
-Attributes Explained:
-Attribute	Purpose
-src	Image file path (relative or absolute)
-alt	Alternative text (required for accessibility)
-width	Display width in pixels (optional)
-loading	lazy delays loading until image is near viewport (performance boost)
-### Responsive Images:
-html
-<picture>
-    <source media="(min-width: 800px)" srcset="large.jpg">
-    <source media="(min-width: 400px)" srcset="medium.jpg">
-    <img src="small.jpg" alt="Responsive image">
-</picture>
-Video Embedding:
-html
-<video controls width="600" poster="preview.jpg">
-    <source src="movie.mp4" type="video/mp4">
-    <source src="movie.webm" type="video/webm">
-    Your browser doesn't support HTML5 video.
-</video>
-Audio Embedding:
-html
-<audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-    Your browser doesn't support the audio element.
-</audio>
-### 📝 9. Forms
-Complete Form Example:
-html
-<form action="/submit" method="POST" novalidate>
-    <fieldset>
-        <legend>Personal Information</legend>
-        
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required minlength="3">
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required 
-               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-    </fieldset>
-    
-    <button type="submit">Register</button>
-    <button type="reset">Clear Form</button>
+```
+
+### 🔖 Tags Used
+
+* `<!DOCTYPE html>`: Declares HTML5 document
+* `<html>`: Root element
+* `<head>`: Metadata container
+* `<title>`: Title of the page
+* `<body>`: Contains visible content
+
+---
+
+## ✍️ 3. Text Formatting Tags
+
+```html
+<h1>Heading 1</h1>
+<p>This is a paragraph.</p>
+<b>Bold</b>
+<i>Italic</i>
+<u>Underline</u>
+<mark>Highlighted</mark>
+<sup>Superscript</sup>
+<sub>Subscript</sub>
+<small>Small text</small>
+```
+
+### 🔧 Use:
+
+For formatting and styling textual content.
+
+---
+
+## 🔖 4. HTML Elements & Attributes
+
+**HTML Element = Opening Tag + Content + Closing Tag**
+
+### 🌍 Global Attributes
+
+* `id`: Unique identifier
+* `class`: For CSS/JS styling
+* `style`: Inline CSS
+* `title`: Tooltip
+* `hidden`: Hides element
+* `lang`: Language of content
+
+```html
+<div id="box" class="container" style="color: red;">Hello</div>
+```
+
+---
+
+## 🔗 5. Links and Anchors
+
+```html
+<a href="https://example.com" target="_blank" title="Go to Example">Visit Site</a>
+```
+
+### 🔧 Attributes:
+
+* `href`: URL
+* `target`: `_blank`, `_self`
+* `title`: Tooltip on hover
+
+Anchor Link:
+
+```html
+<a href="#section1">Jump to Section 1</a>
+```
+
+---
+
+## 🖼️ 6. Images
+
+```html
+<img src="image.jpg" alt="Description" width="300" height="200">
+```
+
+### 🔧 Attributes:
+
+* `src`: Image file path
+* `alt`: Alternate text
+* `width`/`height`: Size
+
+---
+
+## 📋 7. Lists
+
+### Ordered List:
+
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+```
+
+### Unordered List:
+
+```html
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+</ul>
+```
+
+### Description List:
+
+```html
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+</dl>
+```
+
+---
+
+## 📊 8. Tables
+
+```html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>25</td>
+  </tr>
+</table>
+```
+
+### 🔖 Tags:
+
+* `<table>`, `<tr>`, `<td>`, `<th>`
+* `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`
+
+---
+
+## 📝 9. Forms
+
+```html
+<form action="submit.php" method="POST">
+  <label>Name: <input type="text" name="username"></label>
+  <input type="submit" value="Submit">
 </form>
-Form Validation Patterns:
-Pattern	Matches
-[A-Za-z]{3}	Exactly 3 letters
-\d{3}-\d{3}-\d{4}	Phone: 123-456-7890
-[^@]+@[^@]+\.[^@]+	Basic email format
-(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}	Password with 8+ chars, 1 uppercase, 1 lowercase, 1 number
-🏆 13. Project Exercises
-Beginner Projects:
-Personal Profile Page
+```
 
-Requirements: Header, navigation, about section, contact form
+### 🔖 Tags:
 
-Skills: Basic structure, text formatting, links
+* `<form>`, `<input>`, `<label>`, `<textarea>`, `<select>`, `<option>`, `<button>`
 
-Recipe Page
+---
 
-Requirements: Ingredients list, preparation steps, images
+## 🔤 10. Input Types and Attributes
 
-Skills: Lists, images, text formatting
+### Input Types:
 
-Intermediate Projects:
-Product Landing Page
+* `text`, `email`, `password`, `number`
+* `checkbox`, `radio`, `file`, `date`, `range`, `color`
 
-Requirements: Hero section, features grid, testimonial carousel
+### Common Attributes:
 
-Skills: Semantic HTML, responsive images, sections
+* `placeholder`, `required`, `readonly`, `disabled`, `min`, `max`, `step`
 
-Technical Documentation
+```html
+<input type="email" placeholder="Enter email" required>
+```
 
-Requirements: Sidebar navigation, code samples, article sections
+---
 
-Skills: Page structure, accessibility
+## 🧩 11. Semantic HTML Tags
 
-Advanced Projects:
-Interactive Quiz Form
+```html
+<header>Header Content</header>
+<nav>Navigation</nav>
+<main>Main Content</main>
+<article>Article Content</article>
+<section>Section Content</section>
+<footer>Footer Info</footer>
+```
 
-Requirements: Multiple question types, scoring system
+### 📌 Use:
 
-Skills: Complex forms, input types
+Improves SEO and accessibility.
 
-Portfolio with Filterable Gallery
+---
 
-Requirements: Project categories, modal details view
+## 🎵 12. Audio and Video
 
-Skills: Semantic markup, accessibility
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
 
-🔗 14. Resources
-Official Documentation:
-MDN HTML Reference
+<video controls width="400">
+  <source src="video.mp4" type="video/mp4">
+</video>
+```
 
-HTML Living Standard
+---
 
-Validation Tools:
-W3C Validator
+## 🧭 13. IFrames
 
-HTMLHint
+```html
+<iframe src="https://example.com" width="600" height="400" frameborder="0" allowfullscreen></iframe>
+```
 
-Learning Platforms:
-freeCodeCamp HTML
+---
 
-Codecademy HTML
+## 🔍 14. Meta Tags
 
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HTML course">
+```
 
+---
+
+## &️⃣ 15. HTML Entities
+
+```html
+&copy;, &nbsp;, &lt;, &gt;, &amp;, &quot;, &apos;
+```
+
+### 📌 Use:
+
+Displays special/reserved characters.
+
+---
+
+## 📦 16. Block vs Inline Elements
+
+### Block:
+
+* `<div>`, `<p>`, `<section>`, `<article>`, `<table>`, `<form>`
+
+### Inline:
+
+* `<span>`, `<a>`, `<img>`, `<b>`, `<i>`, `<input>`
+
+---
+
+## ⚙️ 17. HTML5 APIs (Overview)
+
+### 🔍 Geolocation API
+
+Used to get the user's geographical location.
+
+```javascript
+navigator.geolocation.getCurrentPosition(function(position) {
+  console.log("Latitude: " + position.coords.latitude);
+});
+```
+
+### 💾 Web Storage API
+
+Used to store data in the browser.
+
+#### `localStorage`
+
+* Stores data with **no expiration**.
+* Data persists even after browser is closed.
+
+```javascript
+localStorage.setItem("username", "John");
+console.log(localStorage.getItem("username"));
+```
+
+#### `sessionStorage`
+
+* Stores data only for the **session**.
+* Data is cleared when tab is closed.
+
+```javascript
+sessionStorage.setItem("token", "abc123");
+console.log(sessionStorage.getItem("token"));
+```
+
+### 🎨 Canvas API
+
+Used to draw graphics directly in the browser.
+
+```html
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "blue";
+  ctx.fillRect(20, 20, 150, 50);
+</script>
+```
+
+### 🧲 Drag and Drop API
+
+Used to implement drag-and-drop functionality.
+
+```html
+<div id="dragMe" draggable="true">Drag me</div>
+```
+
+```javascript
+document.getElementById("dragMe").addEventListener("dragstart", function(event) {
+  event.dataTransfer.setData("text/plain", "Dragged Content");
+});
+```
+
+---
+
+## 🧠 18. Best Practices
+
+* Use semantic elements
+* Validate code with validators
+* Add `alt` text for images
+* Separate structure (HTML), style (CSS), logic (JS)
+* Use indentation and comments
+
+---
+
+## 💡 19. Project Ideas
+
+* Personal Portfolio
+* Resume Webpage
+* Contact Form
+* Product Landing Page
+* Blog Layout
+* Image Gallery
+
+---
+
+## 📚 Resources
+
+* [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [W3Schools HTML](https://www.w3schools.com/html/)
+* [HTML Reference](https://htmlreference.io/)
+
+---
+
+**Happy Coding! 🚀**

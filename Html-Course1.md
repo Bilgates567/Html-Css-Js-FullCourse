@@ -1,4 +1,4 @@
-# 🌐 HTML Full Course - Basic to Advanced with Tags, Properties, and Examples
+
 
 Welcome to the **HTML Full Course**! This GitHub README provides a complete, topic-wise breakdown of HTML from basic to advanced concepts with tag descriptions, attributes, and usage examples.
 

@@ -6,9 +6,12 @@ Welcome to the **HTML Full Course**! This GitHub README provides a complete, top
 
 ## 🧠 1. What is HTML?
 
-* **HTML** stands for **HyperText Markup Language**
-* It's used to **structure content** on the web.
-* **HTML5** is the latest version that includes semantic elements and APIs.
+* HTML stands for Hyper Text Markup Language
+* HTML is the standard markup language for creating Web pages
+* HTML describes the structure of a Web page
+* HTML consists of a series of elements
+* HTML elements tell the browser how to display the content
+* HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
 
 ---
 
@@ -17,22 +20,27 @@ Welcome to the **HTML Full Course**! This GitHub README provides a complete, top
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My First HTML Page</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
 </html>
 ```
 
 ### 🔖 Tags Used
 
-* `<!DOCTYPE html>`: Declares HTML5 document
-* `<html>`: Root element
-* `<head>`: Metadata container
-* `<title>`: Title of the page
-* `<body>`: Contains visible content
+* The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+* The <html> element is the root element of an HTML page
+* The <head> element contains meta information about the HTML page
+* The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+* The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+* The <h1> element defines a large heading
+* The <p> element defines a paragraph
 
 ---
 
@@ -360,6 +368,4 @@ document.getElementById("dragMe").addEventListener("dragstart", function(event) 
 * [W3Schools HTML](https://www.w3schools.com/html/)
 * [HTML Reference](https://htmlreference.io/)
 
----
 
-**Happy Coding! 🚀**

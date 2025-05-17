@@ -1,0 +1,180 @@
+# HTML Tags Documentation
+
+This documentation categorizes HTML tags based on their usage and semantic purpose. It also lists commonly used attributes.
+
+---
+
+## 📄 1. Text Formatting Tags
+
+| Tag        | Description                        |
+| ---------- | ---------------------------------- |
+| `<p>`      | Paragraph tag                      |
+| `<br>`     | Line break (self-closing)          |
+| `<hr>`     | Horizontal rule (self-closing)     |
+| `<b>`      | Bold text (non-semantic)           |
+| `<strong>` | Bold text (semantic: important)    |
+| `<i>`      | Italic text (non-semantic)         |
+| `<em>`     | Emphasized text (semantic: stress) |
+| `<u>`      | Underlined text                    |
+| `<mark>`   | Highlighted text                   |
+| `<small>`  | Smaller text                       |
+| `<sub>`    | Subscript text                     |
+| `<sup>`    | Superscript text                   |
+| `<ins>`    | Inserted text (underlined)         |
+| `<del>`    | Deleted text (strikethrough)       |
+
+---
+
+## 📑 2. Structural & Semantic Tags
+
+| Tag         | Description                        |
+| ----------- | ---------------------------------- |
+| `<html>`    | Root element                       |
+| `<head>`    | Container for metadata             |
+| `<title>`   | Title of the document              |
+| `<body>`    | Main content container             |
+| `<header>`  | Introductory content or navigation |
+| `<nav>`     | Navigation links                   |
+| `<main>`    | Main content area                  |
+| `<section>` | Thematic grouping of content       |
+| `<article>` | Self-contained content block       |
+| `<aside>`   | Tangential content (like sidebars) |
+| `<footer>`  | Footer content                     |
+| `<div>`     | Generic container                  |
+| `<span>`    | Inline container                   |
+
+---
+
+## 🔢 3. List Tags
+
+| Tag    | Description                |
+| ------ | -------------------------- |
+| `<ul>` | Unordered list             |
+| `<ol>` | Ordered list               |
+| `<li>` | List item                  |
+| `<dl>` | Description list           |
+| `<dt>` | Term in a description list |
+| `<dd>` | Description of the term    |
+
+---
+
+## 🧾 4. Table Tags
+
+| Tag          | Description               |
+| ------------ | ------------------------- |
+| `<table>`    | Table container           |
+| `<tr>`       | Table row                 |
+| `<td>`       | Table data cell           |
+| `<th>`       | Table header cell         |
+| `<thead>`    | Header group of a table   |
+| `<tbody>`    | Body group of a table     |
+| `<tfoot>`    | Footer group of a table   |
+| `<caption>`  | Table title               |
+| `<colgroup>` | Grouping of table columns |
+| `<col>`      | Column formatting         |
+
+---
+
+## 📷 5. Media Tags
+
+| Tag        | Description                                     |
+| ---------- | ----------------------------------------------- |
+| `<img>`    | Embed image (self-closing)                      |
+| `<audio>`  | Embed audio                                     |
+| `<video>`  | Embed video                                     |
+| `<source>` | Source for media (used in `<audio>`, `<video>`) |
+| `<track>`  | Subtitles for media                             |
+| `<iframe>` | Embed external content                          |
+| `<embed>`  | Embed external application (self-closing)       |
+| `<object>` | Embed external resources like Flash             |
+
+---
+
+## 🔘 6. Form Tags
+
+| Tag          | Description                     |
+| ------------ | ------------------------------- |
+| `<form>`     | Form container                  |
+| `<input>`    | Input field (self-closing)      |
+| `<textarea>` | Multiline input                 |
+| `<label>`    | Label for input                 |
+| `<button>`   | Clickable button                |
+| `<select>`   | Dropdown list                   |
+| `<option>`   | Option in dropdown              |
+| `<optgroup>` | Grouping of dropdown options    |
+| `<fieldset>` | Group related fields            |
+| `<legend>`   | Caption for `<fieldset>`        |
+| `<datalist>` | Suggestion list for `<input>`   |
+| `<output>`   | Output value from a calculation |
+
+---
+
+## 🔗 7. Link and Navigation Tags
+
+| Tag      | Description                        |
+| -------- | ---------------------------------- |
+| `<a>`    | Anchor (hyperlink)                 |
+| `<link>` | External resource link (CSS, etc.) |
+| `<nav>`  | Navigation menu                    |
+
+---
+
+## ⚙️ 8. Meta and Script Tags
+
+| Tag          | Description                        |
+| ------------ | ---------------------------------- |
+| `<meta>`     | Metadata (charset, viewport, etc.) |
+| `<script>`   | Embed or link JavaScript           |
+| `<noscript>` | Alternative content for no JS      |
+| `<style>`    | Internal CSS                       |
+| `<base>`     | Base URL for relative links        |
+
+---
+
+## ⚠️ 9. Deprecated Tags (Not recommended)
+
+| Tag         | Description                    |
+| ----------- | ------------------------------ |
+| `<center>`  | Center text (use CSS instead)  |
+| `<font>`    | Specify font (use CSS instead) |
+| `<marquee>` | Scrolling text (deprecated)    |
+| `<big>`     | Larger text (use CSS)          |
+| `<tt>`      | Teletype text (use CSS)        |
+
+---
+
+## 🧩 10. Common HTML Attributes
+
+| Attribute     | Usage                                   |
+| ------------- | --------------------------------------- |
+| `id`          | Unique identifier                       |
+| `class`       | CSS class for styling                   |
+| `style`       | Inline CSS                              |
+| `title`       | Tooltip text                            |
+| `alt`         | Alternate text for images               |
+| `src`         | Source file (e.g., images, media)       |
+| `href`        | Hyperlink reference                     |
+| `name`        | Form element name                       |
+| `value`       | Default value for input                 |
+| `type`        | Type of input element                   |
+| `placeholder` | Placeholder text in input               |
+| `readonly`    | Makes input read-only                   |
+| `disabled`    | Disables input or element               |
+| `checked`     | Pre-check checkbox or radio             |
+| `selected`    | Pre-select dropdown option              |
+| `required`    | Makes field mandatory                   |
+| `action`      | URL form submits to                     |
+| `method`      | GET or POST method for form             |
+| `target`      | Opens link in new window/tab (`_blank`) |
+
+---
+
+## ✅ Notes
+
+* Semantic tags improve accessibility and SEO.
+* Always use attributes relevant to context.
+* Prefer CSS for styling and formatting over old HTML tags.
+
+---
+
+Made for study purpose by **Arockia Bilgates** ✍️
